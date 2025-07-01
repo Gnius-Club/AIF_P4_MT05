@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P4-TM05</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 5 4to Primaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos de Aprendizaje:</strong>
+                                    <ul>
+                                        <li>Smart A.I. Lens: ¿Qué es? Conectarla al Cutebot. Initialize AI-Lens. Explorar el modo de Reconocimiento de Tarjetas de Color (Switch function as Color).</li>
+                                        <li>Tu plan (GCS): leer_lente_IA_color().</li>
+                                        <li>IA (Conceptual): Esta lente usa IA para "saber" qué color es. ¿Cómo aprendió? (Modelos pre-entrenados con muchos ejemplos de colores).</li>
+                                        <li>Parte de la Currícula de IA (Primaria 4 - AIA y Adicionales) cubierta: AIA: Introducción al Aprendizaje Automático (ML) (Conceptual): IA pre-entrenada para reconocer colores.</li>
+                                        <li>Objetivo General de la Sesión: Que los estudiantes se familiaricen con la Smart A.I. Lens, aprendan a inicializarla y a usar su función de reconocimiento de tarjetas de color, y comprendan conceptualmente que esta capacidad de "ver" y "reconocer" se basa en IA previamente entrenada con muchos ejemplos.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li>⚡ Actividad 1: Saludo de I.A. con todos</li>
+                                        <li>⚡ Actividad 2: I Can Statement + Ejemplificación</li>
+                                        <li>⚡ Actividad 3: AI GYM</li>
+                                        <li>⚡ Actividad 4: Brain Spark</li>
+                                        <li>⚡ Actividad 5: Gnius STORM (Think-Pair-Share)</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Programa en Micro:bit que utiliza la Smart A.I. Lens para reconocer una tarjeta de color y mostrar el nombre del color detectado en la pantalla del Micro:bit, creado a partir de tu plan (GCS) generado con la IA.</li>
+                                        <li>Participación en la discusión sobre modelos pre-entrenados y Aprendizaje Automático conceptual.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Chat de "Agente Gnius" (Xolo) activo.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-11).</li>
+                                        <li>Robots Cutebot (1 por cada 2 estudiantes).</li>
+                                        <li>Smart A.I. Lens (1 por cada 2 estudiantes, o según disponibilidad).</li>
+                                        <li>Micro:bits y baterías (1 por cada 2 estudiantes).</li>
+                                        <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>), asegurando que la extensión de la A.I. Lens esté disponible.</li>
+                                        <li>Tarjetas de diferentes colores (rojo, azul, verde, negro, blanco, etc., según los colores que reconozca la lente).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet.</li>
+                                                <li>Confirmar acceso y funcionamiento de la plataforma de programación del día (MakeCode) y la extensión de A.I. Lens.</li>
+                                                <li>Asegurar disponibilidad y carga de los dispositivos físicos (Cutebots, A.I. Lens, Micro:bits).</li>
+                                                <li>Tener la presentación de diapositivas lista y en orden.</li>
+                                                <li>Probar el chat "Agente Gnius" (Xolo) para asegurar su operatividad.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad. Familiarízate con la conexión de la A.I. Lens al Cutebot.</li>
+                                        <li><strong>Ejemplo Profesor:</strong> Tener listo y funcional tu proyecto de ejemplo (Micro:bit mostrando el nombre del color de una tarjeta que se le presenta a la A.I. Lens) para la demostración en la Actividad 2.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
+                <p>El chatbot da la bienvenida y genera entusiasmo por el nuevo "súper poder" de visión del Cutebot.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Saludo de I.A. con todos ⏰ 0.5 minutos</h3>
+                            <p>(Proyectar Diapositiva 2). Da la bienvenida a los alumnos con energía, introduce la Smart A.I. Lens como un nuevo "súper poder" y pídeles que activen a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola, visionarios de la robótica! Hoy nuestro Cutebot va a recibir un súper poder: ¡la capacidad de 'ver' con una cámara inteligente llamada Smart A.I. Lens! Vamos a descubrir cómo esta lente puede reconocer colores. Antes de empezar, activen a Xolo. Salúdenlo en el chat con su nombre y sus gustos. Por ejemplo: 'Hola Xolo, soy [Nombre] y mis gustos son [la fotografía y los arcoíris]'."</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Saludo de I.A. con todos ⏰ 2.5 minutos</h3>
+                            <p>Monitorea a los alumnos mientras interactúan con Xolo. Asegúrate de que todos reciban una respuesta y resuelve cualquier problema técnico.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelente! Xolo está listo para esta misión de visión artificial. Si alguien no ha recibido respuesta de Xolo, levante la mano.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: I Can Statement + Ejemplificación ⏰ 7 minutos</h2>
+                <p>Presentar la Smart A.I. Lens, cómo se conecta y el objetivo de reconocer colores.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Introducción y Contextualización ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 3). Presenta físicamente la Smart A.I. Lens, explica que tiene un "cerebro de IA" y cómo se conecta al Cutebot. Indica que hoy se enfocarán en reconocer tarjetas de colores.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Muestra la Smart A.I. Lens). Esta pequeña cámara es muy especial. No es solo una cámara normal, ¡tiene un cerebro de IA adentro! Puede aprender a reconocer cosas. (Explica cómo se conecta al Cutebot o la montan con tu ayuda). Hoy vamos a empezar enseñándole (o más bien, usando lo que ya sabe) a reconocer diferentes tarjetas de colores.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Presentación del Proyecto del Profesor ⏰ 2 minutos</h3>
+                            <p>Muestra tu proyecto de ejemplo (Micro:bit mostrando el nombre del color de una tarjeta presentada a la A.I. Lens) ya cargado y funcionando. Esta es una demostración en vivo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Para que vean lo que vamos a lograr, miren esto. (Muestra el Micro:bit conectado al Cutebot con la lente. Presenta una tarjeta de color a la lente y el Micro:bit muestra el nombre del color). Mi 'idea' fue que el Micro:bit me dijera qué color estaba viendo la lente.</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: "I Can Statement" y Conexión ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 4). Presenta formalmente el 'I Can Statement'.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Al final de la clase, podrán decir: '<strong>Yo puedo hacer que mi Cutebot, usando la Smart A.I. Lens, reconozca una tarjeta de color y me diga qué color vio, usando tu plan (GCS).</strong>' Y entenderemos un poquito de cómo 'aprendió' la lente a hacer eso. ¡Vamos a darle visión a Cutebot!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: AI GYM ⏰ 7 minutos</h2>
+                <p>Introducir los comandos GCS para la A.I. Lens y el concepto de cómo "sabe" los colores (modelos pre-entrenados y ML conceptual).</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Instrucción Inicial y Contextualización de la IA ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 5). Presenta el A.I. GYM y da la instrucción para que los alumnos pidan la información a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Genios, al A.I. GYM! 🧠💪 Xolo nos explicará cómo usar la Smart A.I. Lens, los comandos de tu plan (GCS) para 'despertarla' y leer colores, y el secreto de cómo 'sabe' los colores. Escriban en el chat: 'Mi perfil es [escribe aquí tus gustos/intereses] y quiero aprender sobre la Smart A.I. Lens, cómo reconoce colores y qué es el Aprendizaje Automático'.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Interacción Guiada y Ejemplo de Plan (GCS) ⏰ 6 minutos</h3>
+                            <p>(Proyectar Diapositivas 6 y 7). Monitorea a los alumnos. Xolo les explicará los comandos `Initialize AI-Lens`, `Switch function as Color`, `leer_lente_IA_color()`, y el concepto de que la lente fue "entrenada" con muchos ejemplos de colores (Aprendizaje Automático).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Mientras los alumnos interactúan con Xolo) ¡Fantástico! Xolo les está explicando que la Smart A.I. Lens es como los ojos inteligentes del Cutebot. Para usarla, primero la 'despertamos' con `Initialize AI-Lens`. Luego, le decimos que queremos reconocer colores con `Switch function as Color`. Y para saber qué color ve, usamos `leer_lente_IA_color()`. Lo más interesante es cómo 'sabe' los colores: ¡fue entrenada con miles de ejemplos, como cuando ustedes aprendieron los colores! Eso se llama Aprendizaje Automático.</p>
+                                <p class="dialogue assistant">Para que vean un ejemplo de plan (GCS) para leer un color y mostrarlo, Xolo podría presentarles esto:</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">
+AL INICIO:
+    Initialize AI-Lens
+    Switch function as Color
+    mostrar texto "Viendo colores..."
+
+POR SIEMPRE:
+    fijar variable "color_visto" a leer_lente_IA_color()
+    SI (variable "color_visto" != "ninguno"):
+        mostrar texto variable "color_visto"
+        ESPERAR 1 segundo
+    FIN SI
+                                </pre>
+                                <p class="dialogue assistant">Si tienen preguntas, ¡no duden en consultar a Xolo! Por ejemplo: <br>
+                                <strong>* 'Xolo, ¿la lente puede aprender otros colores si se los enseño?'</strong><br>
+                                <strong>* '¿El Aprendizaje Automático se usa para otras cosas además de reconocer colores?'</strong> (Relacionar con sus gustos) <br>
+                                <strong>* '¿Qué pasa si la lente ve dos colores al mismo tiempo?'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 18 minutos</h2>
+                <p>Configuración, primera detección de color, experimentación y observación.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Introducción al Brain Spark ⏰ 1 minutos</h3>
+                            <p>(Proyectar Diapositiva 8). Presenta la actividad como la fase práctica. Recuerda a los alumnos que trabajarán en parejas y compartirán el material.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Tiempo, visionarios! Ahora al Brain Spark, donde conectarán la A.I. Lens y harán su primera detección de color. Recuerden que trabajarán en parejas, así que necesitarán compartir el Cutebot, la A.I. Lens y el Micro:bit para programar y probar.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ideación (La "idea" de Detección de Color) ⏰ 2 minutos</h3>
+                            <p>Anima a los alumnos a pensar en su 'idea' individual para la detección de color. Deberán organizarse con su compañero para turnarse al programar y probar sus respectivas ideas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Su primera misión con la A.I. Lens: 'Quiero que mi Micro:bit (en el Cutebot) me muestre en su pantalla el nombre del color de la tarjeta que le ponga enfrente a la A.I. Lens.' Esta es nuestra 'idea' base. Piensen cómo lo harían. Luego, hablen con su compañero para organizarse y decidir cómo se turnarán para usar el material para programar y probar. Si necesitan más ideas, consulten a Xolo: 'Exploremos ideas juntos para que la A.I. Lens detecte colores'."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Planificación con IA (El "plan") y Logística ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 9). Guía a los alumnos sobre cómo comunicar su 'idea' a Xolo para obtener 'tu plan'. Asegúrate de que cada pareja tenga su Cutebot, A.I. Lens, Micro:bit y tarjetas de colores.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Para nuestra 'idea' de mostrar el color detectado, díganle a Xolo: 'Quiero que mi Micro:bit muestre el nombre del color que ve la A.I. Lens'.</p>
+                                <p class="dialogue assistant">Xolo podría generar 'tu plan' así:</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">
+AL INICIO:
+    // Despertamos la lente IA
+    Initialize AI-Lens
+    // Le decimos que queremos que reconozca colores de tarjetas
+    Switch function as Color
+    mostrar texto "Lista para colores!"
+
+POR SIEMPRE:
+    // Leemos el color que ve la lente
+    fijar variable "color_detectado" a leer_lente_IA_color()
+
+    // Mostramos el color detectado en el Micro:bit
+    // (El chatbot puede explicar que si no detecta un color conocido, "color_detectado" podría estar vacío o ser "ninguno")
+    SI (variable "color_detectado" != "ninguno"): // O una comprobación adecuada
+        mostrar texto variable "color_detectado"
+        // Una pequeña pausa para que se pueda leer
+        ESPERAR 1 segundo 
+    SINO:
+        limpiar pantalla // Si no ve un color claro, limpia la pantalla
+    FIN SI
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Implementación, Prueba y Experimentación ⏰ 11 minutos</h3>
+                            <p>Da tiempo a los alumnos para conectar la A.I. Lens (si no lo hicieron), traducir 'tu plan' a bloques, y probar con tarjetas de colores. Guíalos para experimentar con colores no predefinidos, iluminación y distancia.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡A programar la visión! Conecten la A.I. Lens a su Cutebot si aún no lo está. Tomen 'tu plan' de Xolo y pásenlo a bloques en MakeCode, prestando atención a los nuevos bloques de la A.I. Lens. Usen las tarjetas de diferentes colores y observen si el Micro:bit muestra el nombre correcto. Luego, ¡a experimentar! ¿Qué pasa si le muestran una tarjeta de un color que no está en su lista? ¿O si la iluminación no es buena? ¿Qué tan cerca o lejos tiene que estar la tarjeta? Estas pruebas ayudan a entender que la IA tiene un conocimiento limitado y que el entorno afecta. Recuerden turnarse.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 5: Mejoras y Desafíos ⏰ 1 minutos</h3>
+                            <p>Ofrece desafíos adicionales.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¿Su Cutebot ya es un experto identificador de colores? ¡Genial! Para un desafío extra: ¿Pueden hacer que el Cutebot encienda sus LEDs RGB del mismo color que detecta la tarjeta? ¡Consulten con Xolo cómo podrían modificar 'tu plan'!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Los alumnos comparten sus hallazgos y reflexionan sobre el entrenamiento de la IA.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM (Think - Individual) ⏰ 0.5 minutos</h3>
+                            <p>(Proyectar Diapositiva 10). Presenta la actividad.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Tiempo, científicos de la visión! Han hecho un gran trabajo en el Brain Spark. Ahora, en nuestro Gnius STORM, vamos a compartir qué colores logró "ver" su Cutebot.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Gnius STORM (Pair - Parejas) ⏰ 0.5 minutos</h3>
+                            <p>Reflexión individual.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Antes de mostrarlo, piensen 30 segundos: <strong>¿Qué colores reconoció bien su A.I. Lens? ¿Les sorprendió que pudiera 'saber' los colores? ¿Cómo creen que el entrenamiento previo ayudó a la lente?</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Gnius STORM (Share - Retroalimentación) ⏰ 1.5 minutos</h3>
+                            <p>Indica a los alumnos que se junten en parejas, muestren qué colores detectó su Cutebot y expliquen su experiencia.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Muy bien! Con su compañero, muestren qué colores logró "ver" su Cutebot. Expliquen: <strong>'Mi Cutebot pudo reconocer [colores reconocidos]. Me sorprendió / No me sorprendió que la lente supiera los colores porque [su razonamiento].'</strong> El compañero debe observar y escuchar.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Gnius STORM (Reflexión Final) ⏰ 1.5 minutos</h3>
+                            <p>Guía la retroalimentación.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, la retroalimentación. Después de ver la demostración de su compañero, díganle: <br>
+                                <strong>* 'Me gustó que tu A.I. Lens reconociera el color [color específico].'</strong><br>
+                                <strong>* 'Es interesante tu idea sobre cómo aprendió la lente.'</strong><br>
+                                <strong>* 'Para la próxima, podrías probar con una tarjeta de color [nuevo color o condición de luz]...'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 5: Gnius STORM (Reflexión Final) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 11). Cierra la sesión reforzando el concepto de entrenamiento con datos y aplicaciones de la visión IA.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Su Cutebot ahora tiene 'visión IA' para colores! Recuerden, esto es posible porque la IA dentro de la lente fue entrenada con muchos datos (ejemplos de colores). En las próximas clases, ¡incluso le enseñaremos a reconocer nuestros propios objetos! Piensen en otros lugares donde las máquinas usan IA para 'ver' y reconocer colores, como los clasificadores de frutas en fábricas o algunos sistemas de seguridad. Hoy lograron decir: '<strong>Yo puedo hacer que mi Cutebot, usando la Smart A.I. Lens, reconozca una tarjeta de color y me diga qué color vio, usando tu plan (GCS)</strong>.' ¡Han abierto los ojos de la IA!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
